@@ -118,10 +118,10 @@ AddOutputFilter chunkFilter
 		<Item Name="Intake Shooter" Type="Folder" URL="../Intake Shooter">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Climb" Type="Folder" URL="../Climb">
+		<Item Name="Control Panel" Type="Folder" URL="../Control Panel">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Control Panel" Type="Folder" URL="../Control Panel">
+		<Item Name="Climber" Type="Folder" URL="../Climber">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
@@ -526,6 +526,9 @@ AddOutputFilter chunkFilter
 				<Item Name="Spark MAX Open.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Open.vi"/>
 				<Item Name="Spark MAX Control Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Control Type.ctl"/>
 				<Item Name="Spark MAX Set Output Advanced.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Set Output Advanced.vi"/>
+				<Item Name="Spark MAX Get Analog Position.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Public/Spark MAX Get Analog Position.vi"/>
+				<Item Name="Spark MAX Get Status 3.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/SubVI/Private/Spark MAX Get Status 3.vi"/>
+				<Item Name="Spark MAX Status 3 Frame.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/SPARK MAX/Typedef/Spark MAX Status 3 Frame.ctl"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -539,6 +542,16 @@ AddOutputFilter chunkFilter
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Read Climb Operation.vi" Type="VI" URL="../Climb/Commands/Read Climb Operation.vi"/>
+			<Item Name="Climb Check for New Command.vi" Type="VI" URL="../Climb/Implementation/Infrastructure/Climb Check for New Command.vi"/>
+			<Item Name="Climb Command Helper.vi" Type="VI" URL="../Climb/Implementation/Infrastructure/Climb Command Helper.vi"/>
+			<Item Name="Climb Controller Initialization.vi" Type="VI" URL="../Climb/Implementation/Infrastructure/Climb Controller Initialization.vi"/>
+			<Item Name="Climb Controller Interactive Check.vi" Type="VI" URL="../Climb/Implementation/Infrastructure/Climb Controller Interactive Check.vi"/>
+			<Item Name="Climb Controller.vi" Type="VI" URL="../Climb/Implementation/Climb Controller.vi"/>
+			<Item Name="Climb Operations.ctl" Type="VI" URL="../Climb/Implementation/Climb Operations.ctl"/>
+			<Item Name="Climb Published Globals.vi" Type="VI" URL="../Climb/Implementation/Climb Published Globals.vi"/>
+			<Item Name="Climb Setpoints.ctl" Type="VI" URL="../Climb/Implementation/Climb Setpoints.ctl"/>
+			<Item Name="Climb Teleop.vi" Type="VI" URL="../Climb/Climb Teleop.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
